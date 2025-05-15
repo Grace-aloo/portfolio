@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Grace</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="./tailwind.config.js"></script>
+</head>
+<body class="overflow-x-hidden">
+    <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]">
+        <img src="./images/header-bg-color.png" alt="background-image" class="w-full">
+    </div>
+    <nav class="w-full fixed px-5 lg:px-b xl:px-[8%] py-4 flex
+    items-center justify-between z-50">
+        <img src="/images/logo.png" alt="logo" class="w-28 cursor-pointer mr-14">
+        <ul class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#work">My work</a></li>
+            <li><a href="#contact">Contact me</a></li>
+        </ul>
+        <div class="flex items-center gap-4">
+            <button><img src="/images/moon_icon.png" alt="moon icon" class="w-6"></button>
+            <a href="#contact" class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4">
+                Contact
+                <img class="w-4" src="/images/arrow.png" alt="arrow">
+            </a>
+            <button onclick="openMenu()" class="block md:hidden ml-3"><img src="/images/menu-black.png" alt="" class="w-6"></button>
+        </div> 
+        <!-- Mobile menu -->
+        <ul  id="mobile-menu" class="flex md:hidden flex-col gap-4 py-20 px-10 fixed
+        top-0 bottom-0 left-0 w-full items-center z-50 h-screen bg-rose-50 transform translate-y-[-100%] transition duration-500">
+        <div onclick="closeMenu()" class="absolute right-6 top-6 cursor-pointer">
+            <img src="/images/close-black.png" alt="" class="w-5">
+        </div>
+            <li><a onclick="closeMenu()" href="#home">Home</a></li>
+            <li><a onclick="closeMenu()" href="#about">About me</a></li>
+            <li><a onclick="closeMenu()" href="#services">Services</a></li>
+            <li><a onclick="closeMenu()" href="#work">My work</a></li>
+            <li><a onclick="closeMenu()" href="#contact">Contact me</a></li>
+        </ul>
+    </nav>
+    <!---header-->
+    <div id="home" class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center
+    justify-center gap-4">
+        <img src="/images/IMG_1997.jpg" class="rounderd-full w-32" alt="">
+        <h3 class="flex item items-center gap-2 text-xl md:text-2xl mb-3">Hi! I'm Grace Aloo
+            <img src="/images/hand-icon.png" alt="" class="w-6">
+        </h3>
+        <h1 class="text-3xl sm:text-6xl lg:text-[66px]">Web Developer based in Nairobi, Kenya</h1>
+        <p class="max-w-2xl mx-auto">With 2 years of experience building websites and improving user experiences, I specialize in creating clean, responsive, and user-friendly web solutions. I’m passionate about learning, growing, and using code to solve real-world problems.</p>
+        <div class="flex flex-col sm:flex-row items-center gap-4 mt-4">
+            <a href="#contact" class="px-10 py-3 border rounded-full bg-gradient-to-r 
+            from-[#b820e6] to-[#da7d20] text-white flex items-center gap-2">Contact me
+                <img src="/images/right-arrow-white.png" alt="" class="w-4">
+            </a>
+            <a href="/Grace-Aloo-CV.pdf" download class="px-10 py-3 border rounded-full border-grey-500 bg-white
+                     flex items-center gap-2">My resume
+                <img src="/images/download-icon.png" alt="" class="w-4">
+            </a>
+        </div>
+    </div>
+    <!---about-->
+    <div id="about" class="w-full px-[12%] py-10 scroll-mt-20">
+        <h4 class="text-center mb-2 text-lg">Introduction</h4>
+        <h1 class="text-center text-5xl">
+            About me
+        </h1>
+        <div class="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
+            <div class="max-w-max mx-auto relative">
+                <img src="/images/IMG_1997.jpg" alt="" class="w-64 sm:w-80 rounded-3xl max-w-none">
+            </div>
+            <div class="flex-1">
+                
+                <p class="mb-10 max-w-2xl">
+                    I’m a web developer with 2 years of experience creating responsive websites using JavaScript, 
+                    WordPress, and PHP. Though most of my recent work has been frontend-focused, I’m actively 
+                    transitioning into full-stack development to take on more backend-driven projects. At Pascal Satori—a global 
+                    brand agency—I contribute to digital initiatives that blend strategy and execution. My background in customer 
+                    care also strengthens how I build with users in mind.
+                </p>
+                <ul class="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-2xl">
+                    <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer 
+                    hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[2px_2px_10px_0_rgba(0,0,0,0.4)]">
+                        <img class="w-7 mt-3" src="/images/code-icon.png" alt="">
+                        <h3 class="my-4 font-semibold text-gray-700">Languages</h3>
+                        <p class="text-gray-600 text-sm">HTML, CSS, JavaScript, React, PHP, WordPress, Ruby, Ruby on rails, C and C++</p>
+                    </li>
+                    <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer 
+                    hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[2px_2px_10px_0_rgba(0,0,0,0.4)]">
+                        <img class="w-7 mt-3" src="/images/edu-icon.png" alt="">
+                        <h3 class="my-4 font-semibold text-gray-700">Eduation</h3>
+                        <p class="text-gray-600 text-sm">BSc in Mathematics and Computer Science</p>
+                        <p class="text-gray-600 text-sm">Certificate in Software Engineering</p>
+                    </li>
+                    <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer 
+                    hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[2px_2px_10px_0_rgba(0,0,0,0.4)]">
+                        <img class="w-7 mt-3" src="/images/project-icon.png" alt="">
+                        <h3 class="my-4 font-semibold text-gray-700">projects</h3>
+                        <p class="text-gray-600 text-sm">Built more that 10 projects</p>
+                    </li>
+                </ul>
+                <h4 class="my-6 text-gray-700">Tools I use</h4>
+                <ul class="flex items-center gap-3 sm:gap-5">
+                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400
+                    rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+                        <img src="/images/vscode.png" alt="" class="w-5 sm:w-7">
+                    </li>
+                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400
+                    rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+                        <img src="/images/figma.png" alt="" class="w-5 sm:w-7">
+                    </li>
+                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400
+                    rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+                        <img src="/images/git.png" alt="" class="w-5 sm:w-7">
+                    </li>
+                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400
+                    rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+                        <img src="https://seeklogo.com/images/C/canva-logo-C21344F8C5-seeklogo.com.png" alt="" class="w-1 sm:w-7">
+                    </li>
+                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400
+                    rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzAxIzs2yRTPxONA1yBwMZdhkNwlqmIpxFug&s" alt="" class="w-100 sm:w-7">
+                    </li>
+                    <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400
+                    rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+                        <img src="https://cdn.freebiesupply.com/logos/large/2x/squarespace-logo-png-transparent.png" alt="" class="w-100 sm:w-7">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--------services-->
+    <div id="services" class="w-full px-[12%] py-10 scroll-mt-20">
+        <h4 class="text-center mb-2 text-lg">What I offer</h4>
+        <h1 class="text-center text-5xl">
+            My services
+        </h1>
+        <p class="text-center mx-auto max-w-2xl mt-5 mb-12"></p>
+
+        <div class="grid grid-cols-4 gap-6 my-10">
+            <div class="border border-gray-400 rounded-lg px-8 py-12">
+                <img src="./images/web-icon.png" alt="" class="w-10">
+                <h3 class="text-lg my-4 text-gray-700">Web Development</h3>
+                <p class="text-sm text-gray-600 leading-5"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>
