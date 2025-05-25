@@ -13,8 +13,8 @@
     </div>
     <nav class="w-full fixed px-5 lg:px-b xl:px-[8%] py-4 flex
     items-center justify-between z-50">
-        <img src="/images/logo.png" alt="logo" class="w-28 cursor-pointer mr-14">
-        <ul class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50">
+        <img src="./images/logo.png" alt="logo" class="w-28 cursor-pointer mr-14">
+        <ul class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white/50 shadow-sm bg-opacity-50">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About me</a></li>
             <li><a href="#services">Services</a></li>
@@ -22,18 +22,18 @@
             <li><a href="#contact">Contact me</a></li>
         </ul>
         <div class="flex items-center gap-4">
-            <button><img src="/images/moon_icon.png" alt="moon icon" class="w-6"></button>
+            <button><img src="./images/moon_icon.png" alt="moon icon" class="w-6"></button>
             <a href="#contact" class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4">
                 Contact
-                <img class="w-4" src="/images/arrow.png" alt="arrow">
+                <img class="w-4" src="./images/arrow.png" alt="arrow">
             </a>
-            <button onclick="openMenu()" class="block md:hidden ml-3"><img src="/images/menu-black.png" alt="" class="w-6"></button>
+            <button onclick="openMenu()" class="block md:hidden ml-3"><img src="./images/menu-black.png" alt="" class="w-6"></button>
         </div> 
         <!-- Mobile menu -->
         <ul  id="mobile-menu" class="flex md:hidden flex-col gap-4 py-20 px-10 fixed
         top-0 bottom-0 left-0 w-full items-center z-50 h-screen bg-rose-50 transform translate-y-[-100%] transition duration-500">
         <div onclick="closeMenu()" class="absolute right-6 top-6 cursor-pointer">
-            <img src="/images/close-black.png" alt="" class="w-5">
+            <img src="./images/close-black.png" alt="" class="w-5">
         </div>
             <li><a onclick="closeMenu()" href="#home">Home</a></li>
             <li><a onclick="closeMenu()" href="#about">About me</a></li>
@@ -45,20 +45,20 @@
     <!---header-->
     <div id="home" class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center
     justify-center gap-4">
-        <img src="/images/IMG_1997.jpg" class="rounderd-full w-32" alt="">
+        <img src="./images/IMG_1997.jpg" class="rounded-full w-32" alt="">
         <h3 class="flex item items-center gap-2 text-xl md:text-2xl mb-3">Hi! I'm Grace Aloo
-            <img src="/images/hand-icon.png" alt="" class="w-6">
+            <img src="./images/hand-icon.png" alt="" class="w-6">
         </h3>
         <h1 class="text-3xl sm:text-6xl lg:text-[66px]">Web Developer based in Nairobi, Kenya</h1>
         <p class="max-w-2xl mx-auto">With 2 years of experience building websites and improving user experiences, I specialize in creating clean, responsive, and user-friendly web solutions. I’m passionate about learning, growing, and using code to solve real-world problems.</p>
         <div class="flex flex-col sm:flex-row items-center gap-4 mt-4">
             <a href="#contact" class="px-10 py-3 border rounded-full bg-gradient-to-r 
             from-[#b820e6] to-[#da7d20] text-white flex items-center gap-2">Contact me
-                <img src="/images/right-arrow-white.png" alt="" class="w-4">
+                <img src="./images/right-arrow-white.png" alt="" class="w-4">
             </a>
-            <a href="/Grace-Aloo-CV.pdf" download class="px-10 py-3 border rounded-full border-grey-500 bg-white
+            <a href="Grace-Aloo-CV.pdf" download class="px-10 py-3 border rounded-full border-grey-500 bg-white
                      flex items-center gap-2">My resume
-                <img src="/images/download-icon.png" alt="" class="w-4">
+                <img src="./images/download-icon.png" alt="" class="w-4">
             </a>
         </div>
     </div>
@@ -70,7 +70,7 @@
         </h1>
         <div class="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
             <div class="max-w-max mx-auto relative">
-                <img src="/images/IMG_1997.jpg" alt="" class="w-64 sm:w-80 rounded-3xl max-w-none">
+                <img src="./images/IMG_1997.jpg" alt="" class="w-64 sm:w-80 rounded-3xl max-w-none">
             </div>
             <div class="flex-1">
                 
@@ -83,21 +83,21 @@
                 </p>
                 <ul class="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-2xl">
                     <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer 
-                    hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[2px_2px_10px_0_rgba(0,0,0,0.4)]">
-                        <img class="w-7 mt-3" src="/images/code-icon.png" alt="">
+                    hover:bg-lighthover hover:-translate-y-1 duration-500 hover:shadow-[2px_2px_10px_0_rgba(0,0,0,0.4)]">
+                        <img class="w-7 mt-3" src="./images/code-icon.png" alt="">
                         <h3 class="my-4 font-semibold text-gray-700">Languages</h3>
                         <p class="text-gray-600 text-sm">HTML, CSS, JavaScript, React, PHP, WordPress, Ruby, Ruby on rails, C and C++</p>
                     </li>
                     <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer 
-                    hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[2px_2px_10px_0_rgba(0,0,0,0.4)]">
-                        <img class="w-7 mt-3" src="/images/edu-icon.png" alt="">
-                        <h3 class="my-4 font-semibold text-gray-700">Eduation</h3>
+                    hover:bg-lighthover hover:-translate-y-1 duration-500 hover:shadow-[2px_2px_10px_0_rgba(0,0,0,0.4)]">
+                        <img class="w-7 mt-3" src="./images/edu-icon.png" alt="">
+                        <h3 class="my-4 font-semibold text-gray-700">Education</h3>
                         <p class="text-gray-600 text-sm">BSc in Mathematics and Computer Science</p>
                         <p class="text-gray-600 text-sm">Certificate in Software Engineering</p>
                     </li>
                     <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer 
-                    hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[2px_2px_10px_0_rgba(0,0,0,0.4)]">
-                        <img class="w-7 mt-3" src="/images/project-icon.png" alt="">
+                    hover:bg-lighthover hover:-translate-y-1 duration-500 hover:shadow-[2px_2px_10px_0_rgba(0,0,0,0.4)]">
+                        <img class="w-7 mt-3" src="./images/project-icon.png" alt="">
                         <h3 class="my-4 font-semibold text-gray-700">projects</h3>
                         <p class="text-gray-600 text-sm">Built more that 10 projects</p>
                     </li>
@@ -106,15 +106,15 @@
                 <ul class="flex items-center gap-3 sm:gap-5">
                     <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400
                     rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
-                        <img src="/images/vscode.png" alt="" class="w-5 sm:w-7">
+                        <img src="./images/vscode.png" alt="" class="w-5 sm:w-7">
                     </li>
                     <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400
                     rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
-                        <img src="/images/figma.png" alt="" class="w-5 sm:w-7">
+                        <img src="./images/figma.png" alt="" class="w-5 sm:w-7">
                     </li>
                     <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400
                     rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
-                        <img src="/images/git.png" alt="" class="w-5 sm:w-7">
+                        <img src="./images/git.png" alt="" class="w-5 sm:w-7">
                     </li>
                     <li class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400
                     rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
@@ -138,17 +138,115 @@
         <h1 class="text-center text-5xl">
             My services
         </h1>
-        <p class="text-center mx-auto max-w-2xl mt-5 mb-12"></p>
+        <p class="text-center mx-auto max-w-2xl mt-5 mb-12">I'm a Full Stack Developer based in Nairobi, Kenya with 2 years of experience crafting custom websites, intuitive user interfaces, and scalable digital solutions. 
+            I combine design and development to bring brands to life online.
+        </p>
 
-        <div class="grid grid-cols-4 gap-6 my-10">
-            <div class="border border-gray-400 rounded-lg px-8 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 my-10">
+            <div class="border border-gray-400 rounded-lg px-8 py-12
+            hover:shadow-[2px_2px_10px_0_rgba(0,0,0,0.4)] hover:bg-lighthover
+            hover: -translate-y-1 duration-500">
                 <img src="./images/web-icon.png" alt="" class="w-10">
                 <h3 class="text-lg my-4 text-gray-700">Web Development</h3>
-                <p class="text-sm text-gray-600 leading-5"></p>
+                <p class="text-sm text-gray-600 leading-5">I build fast, responsive websites using tools like JavaScript, TailwindCSS, Ruby, PHP and WordPress. 
+                    From crafting custom frontend designs to backend development—like theme customization and plugin integration—I ensure clean code,
+                     smooth performance, and user-friendly admin areas.</p>
+            </div>
+            <div class="border border-gray-400 rounded-lg px-8 py-12
+            hover:shadow-[2px_2px_10px_0_rgba(0,0,0,0.4)] hover:bg-lighthover
+            hover: -translate-y-1 duration-500">
+                <img src="./images/web-icon.png" alt="" class="w-10">
+                <h3 class="text-lg my-4 text-gray-700">Website Optimization</h3>
+                <p class="text-sm text-gray-600 leading-5">I analyze and improve website speed, SEO-readiness, 
+                    and user experience using best practices in performance, plugin management, and mobile responsiveness.</p>
+            </div>
+            <div class="border border-gray-400 rounded-lg px-8 py-12
+            hover:shadow-[2px_2px_10px_0_rgba(0,0,0,0.4)] hover:bg-lighthover
+            hover: -translate-y-1 duration-500">
+                <img src="./images/web-icon.png" alt="" class="w-10">
+                <h3 class="text-lg my-4 text-gray-700">Website Maintenance & Support</h3>
+                <p class="text-sm text-gray-600 leading-5">Need someone to handle updates, 
+                    backups, bug fixes, or training? I offer ongoing maintenance plans to keep your site running smoothly post-launch.</p>
+            </div>
+            <div class="border border-gray-400 rounded-lg px-8 py-12
+            hover:shadow-[2px_2px_10px_0_rgba(0,0,0,0.4)] hover:bg-lighthover
+            hover: -translate-y-1 duration-500">
+                <img src="./images/ui-icon.png" alt="" class="w-10">
+                <h3 class="text-lg my-4 text-gray-700">UI/UX Collaboration & Visual Design</h3>
+                <p class="text-sm text-gray-600 leading-5">I work confidently with existing Figma designs—making 
+                    refinements and ensuring seamless handoff to development. I also create high-quality visuals and branded assets in 
+                    Canva, bringing consistency and polish to both web and design work.</p>
             </div>
         </div>
     </div>
+<!-------------my work-->
 
-    <script src="/script.js"></script>
+    <div id="work" class="w-full px-[12%] py-10 scroll-mt-20">
+        <h4 class="text-center mb-2 text-lg">My Portfolio</h4>
+        <h1 class="text-center text-5xl">
+            My latest work
+        </h1>
+        <p class="text-center mx-auto max-w-2xl mt-5 mb-12"> Welcome to my portfolio!
+            Explore a collection of projects showcasing my expertise.
+        </p>
+
+        <div class="grid grid-cols-auto my-10 gap-5" >
+            <div class="aspect-square bg-[url('')] bg-no-repeat
+            bg-cover bg-center rounded-lg relative cursor-pointer">
+                <div>
+                    
+                </div>
+            <div>
+        </div>
+        </div>
+    </div>
+    <!--------contact-->
+    <div id="contact" class="w-full px-[12%] py-10 scroll-mt-20 bg-[url('./images/footer-bg-color.png')]
+    bg-no-repeat bg-[length:90%_auto] bg-center">
+        <h4 class="text-center mb-2 text-lg">Connect with me</h4>
+        <h1 class="text-center text-5xl">
+            Get In Touch
+        </h1>
+        <p class="text-center mx-auto max-w-2xl mt-5 mb-12"> I'd love to hear from you!
+            If you'd like to collabrorate, have any questions, comments or feedback, please use the form below.
+        </p>
+        <form action="" class="max-w-2xl mx-auto">
+            <div class="grid grid-cols-auto gap-6 mt-10 mb-8">
+                <input type="text" name="name" id="name" placeholder="Name" class="flex-1 p-3
+                outline-none border-gray-400 rounded-md bg-white">
+                <input type="email" name="email" id="email" placeholder="Email" class="flex-1 p-3
+                outline-none border-gray-400 rounded-md bg-white">
+            </div>
+            <textarea class="w-full p-4 outline-none border-[0.5px]
+             border-gray-400 rounder-md bg-white mb-6" rows="6" name="message" id="message" placeholder="Message"></textarea>
+             <button class="py-3 px-8 w-max flex items-center justify-content-center
+             gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black
+             duration-500">
+                Submit
+                <img src="./images/right-arrow-white.png" alt="" class="w-4">
+             </button>
+        </form>
+
+    </div>
+
+    <!------footer-->
+    <div class="mt-20">
+        <div class="text-center">
+            <img src="./images/logo.png" alt="" class="w-36 mx-auto mb-2">
+            <div class="w-max flex items-center gap-2 mx-auto">
+                <img src="./images/mail_icon.png" class="w-6" alt="">
+                graceaaloo@gmail.com
+            </div>
+        </div>
+        <div class="text-center sm:flex items-center justify-between border-t border-gray-400 mx-[10%]
+        mt-12 py-6">
+            <p> 2025 Grace Aloo. All rights reserved.</p>
+            <ul class="flex items-center gap-10 justify-center mt-4 sm:mt-0">
+                <li><a href=""></a>LinkedIn</li>
+                <li><a href=""></a>Github</li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
